@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49b8c5e9-426a-4baa-acb9-bdc1fa2bb5a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SearchElementInAnArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Strings.java" afterDir="false" />
+    <list default="true" id="49b8c5e9-426a-4baa-acb9-bdc1fa2bb5a6" name="Changes" comment="programs">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Strings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Array.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SearchElementInAnArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Strings.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Array.executor": "Run",
+    "Application.SearchElementInAnArray.executor": "Run",
+    "Application.Strings.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Strings">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array" />
@@ -89,6 +86,19 @@
       <option name="presentableId" value="Default" />
       <updated>1727294870489</updated>
     </task>
+    <task id="LOCAL-00001" summary="programs">
+      <option name="closed" value="true" />
+      <created>1727604212508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727604212508</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="programs" />
+    <option name="LAST_COMMIT_MESSAGE" value="programs" />
   </component>
 </project>
