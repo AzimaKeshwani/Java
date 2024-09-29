@@ -44,8 +44,8 @@ public class Strings {
         if (starting < 0 || starting >= a.length()) {
             return "";
         }
-        a = a.substring(starting).toLowerCase();
-        return a;
+        return a.substring(starting).toLowerCase();
+
     }
 
     public static String[] splitString(String a, String extractBy) {
