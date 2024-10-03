@@ -1,47 +1,51 @@
 import java.util.Arrays;
 
 public class Strings {
+
+    private String a;
+
+    Strings(String a){
+        this.a=a;
+    }
     public static void main(String[] args) {
-        Strings strings = new Strings();
-        String a = "  Welcome to programming!  ";
-        String abc = "Azima@gmail.com";
+        Strings strings = new Strings("  Welcome to programming!  ");
+        Strings strings1 = new Strings("Azima@gmail.com");
+        Strings strings2 = new Strings("madam");
+        Strings strings3 = new Strings("###Wel$$!come 786$");
         String numbers = "$123, 124, 543";
-        String welcome = "Welcome";
-        String p = "madam";
-        String special = "#yel&low@$ is cool!&(^%*)";
         numbers = numbers.replace("$", "");
-        System.out.println(strings.trimString(a));
+        System.out.println(strings.trimString());
         String[] number = (numbers.split(","));
         System.out.println(numbers);
         System.out.println(number[0]);
-        System.out.println(strings.containsWord(a, "Dallas"));
-        System.out.println(strings.replaceValue(a, "Dallas", "America"));
-        System.out.println(strings.extractSubString(a, 2));
-        System.out.println(Arrays.toString(strings.splitString(abc, "@")));
-        System.out.println(strings.reverseString(welcome));
-        System.out.println(strings.reverseStringUsingStringBuilder(welcome));
-        System.out.println(strings.isStringPalindrome(p));
-        System.out.println(strings.removeSpecialCharacters(special));
-        System.out.println(strings.removeWhiteSpaces(a));
-        System.out.println(strings.countOccurencesOfCharacter(a, 'w'));
-        System.out.println(strings.countWordsInString(a));
+        System.out.println(strings.containsWord("programming"));
+        System.out.println(strings.replaceValue("programming", "America"));
+        System.out.println(strings.extractSubString(13));
+        System.out.println(Arrays.toString(strings1.splitString("@")));
+        System.out.println(strings.reverseString());
+        System.out.println(strings.reverseStringUsingStringBuilder());
+        System.out.println(strings2.isStringPalindrome());
+        System.out.println(strings3.removeSpecialCharacters());
+        System.out.println(strings.removeWhiteSpaces());
+        System.out.println(strings.countOccurencesOfCharacter('w'));
+        System.out.println(strings.countWordsInString());
     }
 
-    public String trimString(String a) {
+    public String trimString() {
         return a.trim();
     }
 
-    public boolean containsWord(String a, String elementToCheck) {
+    public boolean containsWord(String elementToCheck) {
 
         return a.contains(elementToCheck);
 
     }
 
-    public String replaceValue(String a, String oldString, String newString) {
+    public String replaceValue(String oldString, String newString) {
         return a.replaceAll(oldString, newString);
     }
 
-    public String extractSubString(String a, int starting) {
+    public String extractSubString(int starting) {
         if (starting < 0 || starting >= a.length()) {
             return "";
         }
@@ -49,39 +53,39 @@ public class Strings {
 
     }
 
-    public String[] splitString(String a, String extractBy) {
-        return a.split(extractBy);
+    public String[] splitString(String splitAt) {
+        return a.split(splitAt);
 
     }
 
-    public String reverseString(String reverse) {
-        char[] a = reverse.toCharArray();
+    public String reverseString() {
+        char[] b = a.toCharArray();
         String rev = "";
-        for (int i = reverse.length() - 1; i >= 0; i--) {
-            rev += a[i];
+        for (int i = a.length() - 1; i >= 0; i--) {
+            rev += b[i];
         }
         return rev;
     }
 
-    public String reverseStringUsingStringBuilder(String reverse) {
-        return new StringBuilder(reverse).reverse().toString();
+    public String reverseStringUsingStringBuilder() {
+        return new StringBuilder(a).reverse().toString();
     }
 
-    public boolean isStringPalindrome(String a) {
-        String reversed = reverseString(a);
+    public boolean isStringPalindrome() {
+        String reversed = reverseString();
         return reversed.equalsIgnoreCase(a);
 
     }
 
-    public String removeSpecialCharacters(String a) {
+    public String removeSpecialCharacters() {
         return a.replaceAll("[^a-zA-Z0-9]", "");
     }
 
-    public String removeWhiteSpaces(String a) {
+    public String removeWhiteSpaces() {
         return a.replaceAll("\\s", "");
     }
 
-    public int countOccurencesOfCharacter(String a, char character) {
+    public int countOccurencesOfCharacter(char character) {
         int count = 0;
         String toLowerCase = a.toLowerCase();
         char[] abc = toLowerCase.toCharArray();
@@ -93,7 +97,7 @@ public class Strings {
         return count;
     }
 
-    public int countWordsInString(String a) {
+    public int countWordsInString() {
         return a.trim().split("\\s+").length;
 
     }
