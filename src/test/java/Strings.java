@@ -15,21 +15,21 @@ public class Strings {
         Strings strings3 = new Strings("###Wel$$!come 786$");
         String numbers = "$123, 124, 543";
         numbers = numbers.replace("$", "");
-        System.out.println(strings.trimString());
+        System.out.println("Trimmed String: " + strings.trimString());
         String[] number = (numbers.split(","));
-        System.out.println(numbers);
-        System.out.println(number[0]);
-        System.out.println(strings.containsWord("programming"));
-        System.out.println(strings.replaceValue("programming", "America"));
-        System.out.println(strings.extractSubString(13));
-        System.out.println(Arrays.toString(strings1.splitString("@")));
-        System.out.println(strings.reverseString());
-        System.out.println(strings.reverseStringUsingStringBuilder());
-        System.out.println(strings2.isStringPalindrome());
-        System.out.println(strings3.removeSpecialCharacters());
-        System.out.println(strings.removeWhiteSpaces());
-        System.out.println(strings.countOccurencesOfCharacter('w'));
-        System.out.println(strings.countWordsInString());
+        System.out.println("Split numbers " + Arrays.toString(number));
+        System.out.println("Number at position 0 :" + number[0]);
+        System.out.println("String contains word: " + strings.containsWord("programming"));
+        System.out.println("Replaced String: " + strings.replaceValue("programming", "America"));
+        System.out.println("Extracted String: " + strings.extractSubString(13));
+        System.out.println("Arrays divided by: " + Arrays.toString(strings1.splitString("@")));
+        System.out.println("Reverse String: " + strings.reverseString());
+        System.out.println("Reverse String using StringBuilder: " + strings.reverseStringUsingStringBuilder());
+        System.out.println("String is palindrome: " + strings2.isStringPalindrome());
+        System.out.println("String after removing special characters : " + strings3.removeSpecialCharacters());
+        System.out.println("Removed white spaces: " + strings.removeWhiteSpaces());
+        System.out.println("Total occurrences of character: " + strings.countOccurencesOfCharacter('w'));
+        System.out.println("Total words in String : " + strings.countWordsInString());
     }
 
     public String trimString() {
@@ -47,7 +47,12 @@ public class Strings {
     }
 
     public String extractSubString(int starting) {
+        if (a == null || a.isEmpty()) {
+            System.out.println("String is empty.");
+            return "";
+        }
         if (starting < 0 || starting >= a.length()) {
+            System.out.println("Starting index is out of bounds: " + starting);
             return "";
         }
         return a.substring(starting).toLowerCase();
