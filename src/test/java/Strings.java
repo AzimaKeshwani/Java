@@ -4,9 +4,10 @@ public class Strings {
 
     private String a;
 
-    Strings(String a){
-        this.a=a;
+    Strings(String a) {
+        this.a = a;
     }
+
     public static void main(String[] args) {
         Strings strings = new Strings("  Welcome to programming!  ");
         Strings strings1 = new Strings("Azima@gmail.com");
@@ -54,6 +55,13 @@ public class Strings {
     }
 
     public String[] splitString(String splitAt) {
+        if (a == null || a.isEmpty()) {
+            return new String[]{""};
+        }
+
+        if (splitAt == null || splitAt.isEmpty()) {
+            return new String[]{a};
+        }
         return a.split(splitAt);
 
     }
